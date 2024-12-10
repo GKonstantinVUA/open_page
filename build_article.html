@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Eventbooking">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241210024312">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241210165237">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 
 					<div class="menu__container">
 
-						<a href="#" class="menu__inner-logo" target="_blank">
+						<a href="index.html" class="menu__inner-logo">
 							<img src="img/logo_compasny.svg" alt="Logo company" class="menu__logo-pic">
 						</a>
 
@@ -76,6 +76,9 @@
 				</div>
 
 			</div>
+
+			<!-- <a href="identification.html" class="">Идентификация</a>
+	<a href="system_info.html" class="">Автор</a> -->
 		</header>
 		<div id="popup" aria-hidden="true" class="popup">
 
@@ -159,8 +162,8 @@
 		<main class="page page--setup">
 
 			<!-- Todo Sub Menu -->
-			<div class="sub-link sub-link--setup">
-				<div class="sub-link__content">
+			<div class="sub-link sub-link--setup sub-link--option">
+				<div class="sub-link__content sub-link__content--id">
 					<img src="img/icons/arrow_big.svg" alt="Arrow" class="sub-link__marker-arrow" width="8" height="13">
 					<a href="index.html" id="album-main-page" class="sub-link__main-page">Вернуться назад</a>
 				</div>
@@ -196,7 +199,7 @@
 								</div>
 								<div class="reg-user__row-items">
 									<div class="reg-user__label-userreg">Автор</div>
-									<select id="select-custom" class="reg-user__input-userreg" name="form[]" data-class-modif="form">
+									<select id="select-custom" class="reg-user__input-userregselect" name="form[]" data-class-modif="form">
 										<option value="" selected>Eventus</option>
 										<option value="event-one">Event #1</option>
 										<option value="event-two">Event #2</option>
@@ -212,7 +215,7 @@
 							</div>
 							<div class="reg-user__big-file-processing">
 								<div class="img-selection">
-									<div class="img-selection__sub-title">Изображение</div>
+									<div class="img-selection__sub-title img-selection__sub-title--custom" data-da=".body-img__item-cover,767,0">Изображение</div>
 									<div class="img-selection__border">
 										<div class="img-selection__body-imgs body-img">
 											<!-- * cover #1 -->
@@ -246,7 +249,7 @@
 											</div>
 										</div>
 										<div class="reg-user__dop-block">
-											<div class="choice-files">
+											<div class="choice-files" data-da=".body-img__item-cover,767,2">
 												<div class="choice-files__structure-items">
 													<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
 												</div>
@@ -262,36 +265,38 @@
 						</div>
 						<!--! Block Drag-drop -->
 						<div class="reg-user__body-user-data">
-							<div class="reg-user__envelope-edit">
-								<div class="reg-user__caption">Вступительный текст</div>
-								<div class="reg-user__envelope">
+							<div class="reg-user__row-items">
+								<div class="reg-user__label-userreg reg-user__label-userreg--position reg-user__label-userreg--center">Вступительный текст</div>
+								<div class="reg-user__sketchboard">
 									<div class="reg-user__menu-panel menu-panel">
 										<div class="menu-panel__levels-string">
 											<div class="menu-panel__string-box">
-												<a href="#" class="menu-panel__edit-tool">Источник</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__edit-tool">Источник</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item menu-panel__inner-item--min-mark">
+													<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit menu-panel__tool-edit--list" width="13" height="13">
+												</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 											<div class="menu-panel__string-box">
-												<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 											<div class="menu-panel__string-box">
-												<a href="#" class="menu-panel__tool-style">Стили</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<a href="#" class="menu-panel__tool-style">Форматирование</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__tool-style">Стили</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__tool-style">Форматирование</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 										</div>
 									</div>
@@ -299,12 +304,12 @@
 								</div>
 							</div>
 							<div class="reg-user__row-items">
-								<div class="reg-user__label-userreg reg-user__label-userreg--position">Краткое описание</div>
+								<div class="reg-user__label-userreg">Краткое описание</div>
 								<textarea class="reg-user__input-userreg reg-user__input-userreg--textarea" name="textarea-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
 							</div>
 							<div class="reg-user__row-items">
 								<div class="reg-user__label-userreg">Произвольные ссылки</div>
-								<select id="arbitrary-links" class="reg-user__input-userreg" name="form[]" data-class-modif="form" multiple data-tags>
+								<select id="arbitrary-links" class="reg-user__input-userregselect" name="form[]" data-class-modif="form" multiple data-tags>
 									<option value="" selected>Text</option>
 									<option value="arbitrary-link-one">Arbitrary link #1</option>
 									<option value="arbitrary-link-two">Arbitrary link #2</option>
@@ -315,7 +320,7 @@
 							</div>
 							<div class="reg-user__row-items">
 								<div class="reg-user__label-userreg">Теги</div>
-								<select id="tags" class="reg-user__input-userreg" name="form[]" data-class-modif="form" multiple data-tags>
+								<select id="tags" class="reg-user__input-userregselect" name="form[]" data-class-modif="form" multiple data-tags>
 									<option value="" selected>Value</option>
 									<option value="tag-one">Tag #1</option>
 									<option value="tag-two">Tag #2</option>
@@ -328,45 +333,50 @@
 								<label for="link-article" class="reg-user__label-userreg">Ссылки на статьи</label>
 								<input id="link-article" type="text" class="reg-user__input-userreg" name="artlink-tags">
 							</div>
-							<div class="reg-user__envelope-edit">
-								<div class="reg-user__caption">Текст</div>
-								<div class="reg-user__envelope">
+
+							<div class="reg-user__row-items">
+								<div class="reg-user__label-userreg reg-user__label-userreg--position reg-user__label-userreg--center">Текст</div>
+								<div class="reg-user__sketchboard">
 									<div class="reg-user__menu-panel menu-panel">
 										<div class="menu-panel__levels-string">
 											<div class="menu-panel__string-box">
-												<a href="#" class="menu-panel__edit-tool">Источник</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__edit-tool">Источник</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item menu-panel__inner-item--min-mark">
+													<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit menu-panel__tool-edit--list" width="13" height="13">
+												</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 											<div class="menu-panel__string-box">
-												<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 											<div class="menu-panel__string-box">
-												<a href="#" class="menu-panel__tool-style">Стили</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<a href="#" class="menu-panel__tool-style">Форматирование</a>
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-												<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<div class="menu-panel__tool-style">Стили</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__tool-style">Форматирование</div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+												<div class="menu-panel__inner-item"><img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+												<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 											</div>
 										</div>
 									</div>
 									<textarea class="reg-user__area-text" name="preface-area" autocomplete="off"></textarea>
 								</div>
 							</div>
+
+
 							<div class="reg-user__big-file-processing">
 								<div class="img-selection">
-									<div class="img-selection__sub-title">Изображение</div>
+									<div class="img-selection__sub-title">Галерея</div>
 									<div class="img-selection__border">
 										<div class="img-selection__body-imgs body-img">
 											<div class="body-img__item-cover item-cover">
@@ -405,7 +415,7 @@
 									<input id="title-arbitrary" type="text" class="reg-user__input-userreg" name="subtitle-arbitrary" placeholder="Eventus" required>
 								</div>
 								<div class="reg-user__row-items">
-									<div class="reg-user__label-userreg reg-user__label-userreg--position">Краткое описание</div>
+									<div class="reg-user__label-userreg reg-user__label-userreg--start">Краткое описание</div>
 									<textarea class="reg-user__input-userreg reg-user__input-userreg--textarea" name="arbitrary-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
 								</div>
 								<div class="reg-user__row-items">
@@ -417,11 +427,11 @@
 							<div class="reg-user__column-level-down">
 								<div class="reg-user__big-file-processing">
 									<div class="img-selection">
-										<div class="img-selection__sub-title">Изображение</div>
+										<div class="img-selection__sub-title img-selection__sub-title--custom" data-da=".body-img__item-cover--two,767,0">Изображение</div>
 										<div class="img-selection__border">
 											<div class="img-selection__body-imgs body-img">
 												<!-- * cover #1 -->
-												<div class="body-img__item-cover item-cover">
+												<div class="body-img__item-cover body-img__item-cover--two item-cover">
 													<div class="item-cover__structure">
 														<div class="item-cover__body-pic-elem">
 															<div class="item-cover__level-one">
@@ -451,7 +461,7 @@
 												</div>
 											</div>
 											<div class="reg-user__dop-block">
-												<div class="choice-files">
+												<div class="choice-files" data-da=".body-img__item-cover--two,767,2">
 													<div class="choice-files__structure-items">
 														<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
 													</div>
@@ -464,51 +474,56 @@
 										</div>
 									</div>
 								</div>
-								<div class="correct-data">
-									<div class="correct-data__caption">Вопрос от автора</div>
-									<div class="correct-data__envelope">
-										<div class="correct-data__menu-panel menu-panel">
+								<div class="reg-user__row-items">
+									<div class="reg-user__label-userreg reg-user__label-userreg--position reg-user__label-userreg--center">Вопрос от автора</div>
+									<div class="reg-user__sketchboard">
+										<div class="reg-user__menu-panel menu-panel">
 											<div class="menu-panel__levels-string">
 												<div class="menu-panel__string-box">
-													<a href="#" class="menu-panel__edit-tool">Источник</a>
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-													<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
-													<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-													<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
-													<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-													<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<div class="menu-panel__edit-tool">Источник</div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+													<div class="menu-panel__inner-item menu-panel__inner-item--min-mark">
+														<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit menu-panel__tool-edit--list" width="13" height="13">
+													</div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 												</div>
 												<div class="menu-panel__string-box">
-													<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
-													<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-													<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<div class="menu-panel__inner-item"><img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 												</div>
 												<div class="menu-panel__string-box">
-													<a href="#" class="menu-panel__tool-style">Стили</a>
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-													<a href="#" class="menu-panel__tool-style">Форматирование</a>
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-													<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<div class="menu-panel__tool-style">Стили</div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+													<div class="menu-panel__tool-style">Форматирование</div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
+													<div class="menu-panel__inner-item"><img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13"></div>
+													<div class="menu-panel__inner-line"><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></div>
 												</div>
 											</div>
 										</div>
-										<textarea class="correct-data__area-text" name="preface-area" autocomplete="off" placeholder="Поделитесь своими идеями в комментариях."></textarea>
+										<textarea class="reg-user__area-text" name="preface-area" autocomplete="off"></textarea>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="form-article__individual-block reg-user">
 							<div class="reg-user__btns-body">
-								<div class="form-article__option-btn">
-									<button type="button" class="form-article__button-action">Сохранить</button>
-								</div>
-								<div class="form-article__option-btn">
-									<button type="button" class="form-article__button-action">Отправить на модерацию</button>
+								<div class="reg-user__fantom"></div>
+								<div class="reg-user__area-btn">
+									<div class="form-article__option-btn">
+										<button type="button" class="form-article__button-action">Сохранить</button>
+									</div>
+									<div class="form-article__option-btn">
+										<button type="button" class="form-article__button-action">На модерацию</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -606,7 +621,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241210024312"></script>
+	<script src="js/app.min.js?_v=20241210165237"></script>
 </body>
 
 </html>
