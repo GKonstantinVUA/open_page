@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Eventbooking">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241208162812">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241210024312">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,9 +82,9 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="popup__close">
-						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
-							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						<svg width="14" height="14" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#000000" stroke-linecap="square" />
+							<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#000000" stroke-linecap="square" />
 						</svg>
 					</button>
 
@@ -93,7 +93,7 @@
 						<div class="links-popup">
 							<div class="links-popup__link-wrap link">
 								<a href="#" class="link__page-action">Идентифкация</a>
-								<a href="#" class="link__page-action">Регистрация</a>
+								<a href="#" class="link__page-action link__page-action--default">Регистрация</a>
 							</div>
 
 						</div>
@@ -116,36 +116,32 @@
 								</div>
 							</div>
 
-							<div class="average-level">
-								<h1 class="average-level__title">Или войти с помощью</h1>
-
-								<div class="average-level__corpus-icons social">
-									<div class="social__crisper">
-										<a title="Yandex" href="https://ya.ru/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/icon_yandex.svg" alt="Yandex" class="social__pic-icon" width="38" height="38">
-										</a>
-										<a title="VK" href="https://vk.com/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/icon_vk.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
-										</a>
-										<a title="Mail.ru" href="https://mail.ru/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/mail.ru.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
-										</a>
-									</div>
-
-									<div class="social__checkbox-unit checkbox-unit">
-										<input id="remember-check" type="checkbox" class="checkbox-unit__elem" name="checkbox-remember" required>
-										<label for="remember-check" class="checkbox-unit__label-rem">Запомнить меня</label>
+							<div class="general-box">
+								<div class="average-level average-level--setup">
+									<h1 class="average-level__title">Или войти с помощью</h1>
+									<div class="average-level__corpus-icons social">
+										<div class="social__crisper">
+											<a title="Yandex" href="https://ya.ru/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/icon_yandex.svg" alt="Yandex" class="social__pic-icon" width="38" height="38">
+											</a>
+											<a title="VK" href="https://vk.com/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/icon_vk.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
+											</a>
+											<a title="Mail.ru" href="https://mail.ru/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/mail.ru.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
+											</a>
+										</div>
+										<div class="social__checkbox-unit checkbox-unit">
+											<input id="remember-check" type="checkbox" class="checkbox-unit__elem" name="checkbox-remember" required>
+											<label for="remember-check" class="checkbox-unit__label-rem">Запомнить меня</label>
+										</div>
 									</div>
 								</div>
-							</div>
-
-							<div class="level-access">
 
 								<div class="level-access">
 									<div class="level-access__btn-inner">
 										<button type="submit" class="level-submit__enter">Войти</button>
 									</div>
-
 									<div class="level-access__entrance entrance">
 										<a href="#" class="entrance__link-restore">Забыли пароль?</a>
 									</div>
@@ -160,301 +156,116 @@
 
 			</div>
 		</div>
-		<main class="page">
+		<main class="page page--setup">
 
 			<!-- Todo Sub Menu -->
-			<div class="sub-link">
+			<div class="sub-link sub-link--setup">
 				<div class="sub-link__content">
-					<img src="img/icons/arrow_big.svg" alt="Arrow" class="sub-link__marker-arrow" width="18" height="18">
-					<a href="index.html" class="sub-link__main-page">Вернуться назад</a>
+					<img src="img/icons/arrow_big.svg" alt="Arrow" class="sub-link__marker-arrow" width="8" height="13">
+					<a href="index.html" id="album-main-page" class="sub-link__main-page">Вернуться назад</a>
 				</div>
-
-				<a href="#" class="sub-link__instructions-article">
-					<h1 class="sub-link__title-page">Инструкция по созданию статьи</h1>
-				</a>
-
 			</div>
 
 			<!-- Todo Form Article -->
 			<form class="form-article form-article--option" action="#" method="GET" enctype="multipart/form-data">
 
-				<div class="form-article__set-blocks">
-					<!-- ! Block Main Info -->
-					<div class="primary-data">
-						<label for="fan" class="primary-data__label-artrreg">Слаг
-							<input id="fan" type="text" class="primary-data__input-artrreg" name="full-name-userreg" placeholder="Eventus" required>
-						</label>
-						<div class="primary-data__date-info">
-							<label for="date-article" class="primary-data__label-artrreg">Дата
-								<a href="#" class="primary-data__elem-field">
-									<img src="img/icons/calendar.svg" alt="Calendar" class="primary-data__icon" width="28" height="28">
-								</a>
-								<a href="#" class="primary-data__elem-field">
-									<img src="img/icons/close.svg" alt="Calendar" class="primary-data__icon" width="28" height="28">
-								</a>
-								<input id="date-article" type="text" class="primary-data__input-artrreg" name="date-events" required>
-							</label>
-						</div>
-						<label for="time-article" class="primary-data__label-artrreg">Время на чтение(мин)
-							<input id="time-article" type="text" class="primary-data__input-artrreg" name="time-article" placeholder="2" required>
-						</label>
-						<div class="primary-data__select-author">Автор
-							<select id="select-custom" class="primary-data__select-list" name="form[]" data-class-modif="form">
-								<option value="" selected>Eventus</option>
-								<option value="event-one">Event #1</option>
-								<option value="event-two">Event #2</option>
-								<option value="event-three">Event #3</option>
-								<option value="event-four">Event #4</option>
-								<option value="event-five">Event #5</option>
-							</select>
-						</div>
-						<label for="title-article" class="primary-data__label-artrreg">H1
-							<input id="title-article" type="text" class="primary-data__input-artrreg" name="time-article" placeholder="Eventus" required>
-						</label>
-						<div class="img-selection">
-							<div class="img-selection__border">
-								<div class="img-selection__body-imgs body-img">
-									<!-- * cover #1 -->
-									<div class="body-img__item-cover item-cover">
-										<div class="item-cover__structure">
-											<div class="item-cover__pic-side">
-												<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
+				<div class="form-article__big-box">
+					<div class="form-article__content reg-user">
+						<!--! Block Main -->
+						<div class="reg-user__body-user-data">
+							<div class="reg-user__mainform-data">
+								<div class="reg-user__row-items">
+									<label for="fan" class="reg-user__label-userreg">Слаг</label>
+									<input id="fan" type="text" class="reg-user__input-userreg" name="full-name-userreg" placeholder="Eventus" required>
+								</div>
+								<div class="reg-user__row-items">
+									<label for="date-article" class="reg-user__label-userreg">Дата</label>
+									<div class="reg-user__filed-plus-btn">
+										<div class="reg-user__elem-field" id="btn-calendar">
+											<img src="img/icons/calendar.svg" alt="Calendar" class="reg-user__icon" width="24" height="24">
+										</div>
+										<div class="reg-user__elem-field" id="btn-clear">
+											<img src="img/icons/close.svg" alt="Calendar" class="reg-user__icon" width="24" height="24">
+										</div>
+										<input id="date-article" type="text" class="reg-user__input-userreg reg-user__input-userreg--date" name="date-events" required>
+									</div>
+								</div>
+								<div class="reg-user__row-items">
+									<label for="time-article" class="reg-user__label-userreg">Время на чтение(мин)</label>
+									<input id="time-article" type="text" class="reg-user__input-userreg" name="time-article" placeholder="2" required>
+								</div>
+								<div class="reg-user__row-items">
+									<div class="reg-user__label-userreg">Автор</div>
+									<select id="select-custom" class="reg-user__input-userreg" name="form[]" data-class-modif="form">
+										<option value="" selected>Eventus</option>
+										<option value="event-one">Event #1</option>
+										<option value="event-two">Event #2</option>
+										<option value="event-three">Event #3</option>
+										<option value="event-four">Event #4</option>
+										<option value="event-five">Event #5</option>
+									</select>
+								</div>
+								<div class="reg-user__row-items">
+									<label for="title-article" class="reg-user__label-userreg">H1</label>
+									<input id="title-article" type="text" class="reg-user__input-userreg" name="time-article" placeholder="6 идей для корпоративных мероприятий" required>
+								</div>
+							</div>
+							<div class="reg-user__big-file-processing">
+								<div class="img-selection">
+									<div class="img-selection__sub-title">Изображение</div>
+									<div class="img-selection__border">
+										<div class="img-selection__body-imgs body-img">
+											<!-- * cover #1 -->
+											<div class="body-img__item-cover item-cover">
+												<div class="item-cover__structure">
+													<div class="item-cover__body-pic-elem">
+														<div class="item-cover__level-one">
+															<div class="item-cover__pic-side">
+																<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
+															</div>
+															<div class="item-cover__control">
+																<div class="item-cover__box-download">
+																	<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
+																</div>
+																<div id="size-cover" class="item-cover__size-item">(114.49 KB)</div>
+															</div>
+														</div>
+														<div class="item-cover__panel-iteml tool">
+															<div class="tool__holder">
+																<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+															</div>
+															<div class="tool__holder">
+																<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+															</div>
+															<div class="tool__holder">
+																<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div class="item-cover__control">
-												<div class="item-cover__box-download">
-													<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
+										</div>
+										<div class="reg-user__dop-block">
+											<div class="choice-files">
+												<div class="choice-files__structure-items">
+													<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
 												</div>
-												<div id="size-cover-two" class="item-cover__size-item">(114.49 KB)</div>
-											</div>
-											<div class="item-cover__panel-iteml tool">
-												<div class="tool__holder">
-													<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-												</div>
-												<div class="tool__holder">
-													<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-												</div>
-												<div class="tool__holder">
-													<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="choice-files">
-							<div class="choice-files__setup">
-								<div class="choice-files__structure-items">
-									<input id="file-choice-article-one" type="text" class="choice-files__file-choice" name="file-choice-userreg">
-									<label for="file-choice-article-one" class="choice-files__inner-label">Выбрано файлов: <span class="choice-files__span-value" id="numbers-files-one">1</span></label>
-								</div>
-							</div>
-							<div>
-								<button id="btn-cancel-article-one" type="button" class="choice-files__button-setup">Отмена</button>
-								<button id="btn-choise-article-one" type="button" class="choice-files__button-setup">Выбрать</button>
-							</div>
-						</div>
-					</div>
-
-					<!--! Block Drag-drop -->
-					<div class="correct-data">
-						<div class="correct-data__envelope-edit">
-							<div class="correct-data__caption">Вступительный текст</div>
-							<div class="correct-data__envelope">
-								<div class="correct-data__menu-panel menu-panel">
-									<div class="menu-panel__levels-string">
-										<div class="menu-panel__string-box">
-											<a href="#" class="menu-panel__edit-tool">Источник</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-										<div class="menu-panel__string-box">
-											<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-										<div class="menu-panel__string-box">
-											<a href="#" class="menu-panel__tool-style">Стили</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<a href="#" class="menu-panel__tool-style">Форматирование</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-									</div>
-								</div>
-								<textarea class="correct-data__area-text" name="preface-area" autocomplete="off"></textarea>
-							</div>
-						</div>
-
-						<div class="correct-data__area">Краткое описание
-							<textarea class="correct-data__big-field" name="textarea-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
-						</div>
-
-						<div class="correct-data__boxselect">
-							<div class="correct-data__caption">Произвольные ссылки</div>
-							<select id="arbitrary-links" class="correct-data__arbitrary-links" name="form[]" data-class-modif="form" multiple data-tags>
-								<option value="" selected>Text</option>
-								<option value="arbitrary-link-one">Arbitrary link #1</option>
-								<option value="arbitrary-link-two">Arbitrary link #2</option>
-								<option value="arbitrary-link-three">Arbitrary link #3</option>
-								<option value="arbitrary-link-four">Arbitrary link #4</option>
-								<option value="arbitrary-link-five">Arbitrary link #5</option>
-							</select>
-						</div>
-
-						<div class="correct-data__boxselect">
-							<div class="correct-data__caption">Теги</div>
-							<select id="tags" class="correct-data__tags-list" name="form[]" data-class-modif="form" multiple data-tags>
-								<option value="" selected>Value</option>
-								<option value="tag-one">Tag #1</option>
-								<option value="tag-two">Tag #2</option>
-								<option value="tag-three">Tag #3</option>
-								<option value="tag-four">Tag #4</option>
-								<option value="tag-five">Tag #5</option>
-							</select>
-						</div>
-
-						<label for="link-article" class="correct-data__artlink-tags">Ссылки на статьи
-							<input id="link-article" type="text" class="correct-data__line-tags" name="artlink-tags">
-						</label>
-
-						<div class="correct-data__envelope-edit">
-							<div class="correct-data__caption">Текст</div>
-							<div class="correct-data__envelope">
-								<div class="correct-data__menu-panel menu-panel">
-									<div class="menu-panel__levels-string">
-										<div class="menu-panel__string-box">
-											<a href="#" class="menu-panel__edit-tool">Источник</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-										<div class="menu-panel__string-box">
-											<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-										<div class="menu-panel__string-box">
-											<a href="#" class="menu-panel__tool-style">Стили</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<a href="#" class="menu-panel__tool-style">Форматирование</a>
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-											<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
-											<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
-										</div>
-									</div>
-								</div>
-								<textarea class="correct-data__area-text" name="preface-area" autocomplete="off"></textarea>
-							</div>
-						</div>
-
-						<div class="edit-content">
-							<div class="file-choice-subbox">
-								<div class="file-choice-subbox__caption">Галерея</div>
-								<div class="file-choice-subbox__border">
-									<div class="file-choice-subbox__body-wrapper">
-										<div class="file-choice-subbox__drag-drop">Перетащите файлы сюда...</div>
-									</div>
-								</div>
-							</div>
-							<div class="choice-files">
-								<div class="choice-files__setup">
-									<div class="choice-files__structure-items">
-										<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album">
-										<label for="file-choice-album" class="choice-files__inner-label">Выбрано файлов: <span class="choice-files__span-value" id="numbers-files-two">1</span></label>
-									</div>
-								</div>
-								<div class="choice-files__actions-block">
-									<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
-									<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<!-- ! Block Arbitrary link -->
-					<div class="arbitrary-link">
-						<h2 class="arbitrary-link__sub-title">Блок с произвольной ссылкой</h2>
-
-						<div class="arbitrary-link__set-fields">
-							<label for="title-arbitrary" class="arbitrary-link__label-artrreg">Заголовок
-								<input id="title-arbitrary" type="text" class="arbitrary-link__input-artrreg" name="subtitle-arbitrary" placeholder="Eventus" required>
-							</label>
-
-							<div class="arbitrary-link__area-text">Краткое описание
-								<textarea class="arbitrary-link__zone-text" name="arbitrary-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
-							</div>
-
-							<label for="website" class="arbitrary-link__label-artrreg">Сайт
-								<input id="website" type="text" class="arbitrary-link__input-artrreg" name="arbitrary-site" placeholder="https://склад-офис.рф/signup">
-							</label>
-
-							<div class="img-selection">
-								<div class="img-selection__border">
-									<div class="img-selection__body-imgs body-img">
-										<!-- * cover #1 -->
-										<div class="body-img__item-cover item-cover">
-											<div class="item-cover__structure">
-												<div class="item-cover__pic-side">
-													<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
-												</div>
-												<div class="item-cover__control">
-													<div class="item-cover__box-download">
-														<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
-													</div>
-													<div id="size-cover-one" class="item-cover__size-item">(114.49 KB)</div>
-												</div>
-												<div class="item-cover__panel-iteml tool">
-													<div class="tool__holder">
-														<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-													</div>
-													<div class="tool__holder">
-														<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-													</div>
-													<div class="tool__holder">
-														<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-													</div>
+												<div class="choice-files__actions-block">
+													<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
+													<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div class="choice-files">
-								<div class="choice-files__setup">
-									<div class="choice-files__structure-items">
-										<input id="file-choice-article-two" type="text" class="choice-files__file-choice" name="file-choice-userreg">
-										<label for="file-choice-article-two" class="choice-files__inner-label">Выбрано файлов: <span class="choice-files__span-value" id="numbers-files-three">1</span></label>
-									</div>
-								</div>
-								<div>
-									<button id="btn-cancel-article-two" type="button" class="choice-files__button-setup">Отмена</button>
-									<button id="btn-choise-article-two" type="button" class="choice-files__button-setup">Выбрать</button>
-								</div>
-							</div>
-
-							<div class="correct-data">
-								<div class="correct-data__caption">Вопрос от автора</div>
-								<div class="correct-data__envelope">
-									<div class="correct-data__menu-panel menu-panel">
+						</div>
+						<!--! Block Drag-drop -->
+						<div class="reg-user__body-user-data">
+							<div class="reg-user__envelope-edit">
+								<div class="reg-user__caption">Вступительный текст</div>
+								<div class="reg-user__envelope">
+									<div class="reg-user__menu-panel menu-panel">
 										<div class="menu-panel__levels-string">
 											<div class="menu-panel__string-box">
 												<a href="#" class="menu-panel__edit-tool">Источник</a>
@@ -484,122 +295,307 @@
 											</div>
 										</div>
 									</div>
-									<textarea class="correct-data__area-text" name="preface-area" autocomplete="off" placeholder="Поделитесь своими идеями в комментариях."></textarea>
+									<textarea class="reg-user__area-text" name="preface-area" autocomplete="off"></textarea>
+								</div>
+							</div>
+							<div class="reg-user__row-items">
+								<div class="reg-user__label-userreg reg-user__label-userreg--position">Краткое описание</div>
+								<textarea class="reg-user__input-userreg reg-user__input-userreg--textarea" name="textarea-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
+							</div>
+							<div class="reg-user__row-items">
+								<div class="reg-user__label-userreg">Произвольные ссылки</div>
+								<select id="arbitrary-links" class="reg-user__input-userreg" name="form[]" data-class-modif="form" multiple data-tags>
+									<option value="" selected>Text</option>
+									<option value="arbitrary-link-one">Arbitrary link #1</option>
+									<option value="arbitrary-link-two">Arbitrary link #2</option>
+									<option value="arbitrary-link-three">Arbitrary link #3</option>
+									<option value="arbitrary-link-four">Arbitrary link #4</option>
+									<option value="arbitrary-link-five">Arbitrary link #5</option>
+								</select>
+							</div>
+							<div class="reg-user__row-items">
+								<div class="reg-user__label-userreg">Теги</div>
+								<select id="tags" class="reg-user__input-userreg" name="form[]" data-class-modif="form" multiple data-tags>
+									<option value="" selected>Value</option>
+									<option value="tag-one">Tag #1</option>
+									<option value="tag-two">Tag #2</option>
+									<option value="tag-three">Tag #3</option>
+									<option value="tag-four">Tag #4</option>
+									<option value="tag-five">Tag #5</option>
+								</select>
+							</div>
+							<div class="reg-user__row-items">
+								<label for="link-article" class="reg-user__label-userreg">Ссылки на статьи</label>
+								<input id="link-article" type="text" class="reg-user__input-userreg" name="artlink-tags">
+							</div>
+							<div class="reg-user__envelope-edit">
+								<div class="reg-user__caption">Текст</div>
+								<div class="reg-user__envelope">
+									<div class="reg-user__menu-panel menu-panel">
+										<div class="menu-panel__levels-string">
+											<div class="menu-panel__string-box">
+												<a href="#" class="menu-panel__edit-tool">Источник</a>
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
+												<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
+												<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+											</div>
+											<div class="menu-panel__string-box">
+												<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
+												<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+												<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+											</div>
+											<div class="menu-panel__string-box">
+												<a href="#" class="menu-panel__tool-style">Стили</a>
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<a href="#" class="menu-panel__tool-style">Форматирование</a>
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+												<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+											</div>
+										</div>
+									</div>
+									<textarea class="reg-user__area-text" name="preface-area" autocomplete="off"></textarea>
+								</div>
+							</div>
+							<div class="reg-user__big-file-processing">
+								<div class="img-selection">
+									<div class="img-selection__sub-title">Изображение</div>
+									<div class="img-selection__border">
+										<div class="img-selection__body-imgs body-img">
+											<div class="body-img__item-cover item-cover">
+												<div class="item-cover__structure item-cover__structure--center">
+													<div class="item-cover__drag-drop">Перетащите файлы сюда...</div>
+												</div>
+											</div>
+										</div>
+										<div class="reg-user__dop-block">
+											<div class="choice-files">
+												<div class="choice-files__structure-items">
+													<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
+												</div>
+
+												<div class="choice-files__actions-block">
+													<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
+													<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ! Block Arbitrary link -->
+				<div class="arbitrary-link arbitrary-link--setup">
+					<div class="arbitrary-link__border">
+						<h2 class="arbitrary-link__sub-title">Блок с произвольной ссылкой</h2>
+						<div class="arbitrary-link__content reg-user">
+							<div class="reg-user__column-level-up">
+								<div class="reg-user__row-items">
+									<label for="title-arbitrary" class="reg-user__label-userreg">Заголовок</label>
+									<input id="title-arbitrary" type="text" class="reg-user__input-userreg" name="subtitle-arbitrary" placeholder="Eventus" required>
+								</div>
+								<div class="reg-user__row-items">
+									<div class="reg-user__label-userreg reg-user__label-userreg--position">Краткое описание</div>
+									<textarea class="reg-user__input-userreg reg-user__input-userreg--textarea" name="arbitrary-short-desk" placeholder="Мы поможем сделать ваш корпоратив веселым, захватывающим и оригинальным." autocomplete="off"></textarea>
+								</div>
+								<div class="reg-user__row-items">
+									<label for="website" class="reg-user__label-userreg">Сайт</label>
+									<input id="website" type="text" class="reg-user__input-userreg" name="arbitrary-site" placeholder="https://склад-офис.рф/signup">
 								</div>
 							</div>
 
+							<div class="reg-user__column-level-down">
+								<div class="reg-user__big-file-processing">
+									<div class="img-selection">
+										<div class="img-selection__sub-title">Изображение</div>
+										<div class="img-selection__border">
+											<div class="img-selection__body-imgs body-img">
+												<!-- * cover #1 -->
+												<div class="body-img__item-cover item-cover">
+													<div class="item-cover__structure">
+														<div class="item-cover__body-pic-elem">
+															<div class="item-cover__level-one">
+																<div class="item-cover__pic-side">
+																	<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
+																</div>
+																<div class="item-cover__control">
+																	<div class="item-cover__box-download">
+																		<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
+																	</div>
+																	<div id="size-cover" class="item-cover__size-item">(114.49 KB)</div>
+																</div>
+															</div>
+															<div class="item-cover__panel-iteml tool">
+																<div class="tool__holder">
+																	<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+																</div>
+																<div class="tool__holder">
+																	<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+																</div>
+																<div class="tool__holder">
+																	<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="reg-user__dop-block">
+												<div class="choice-files">
+													<div class="choice-files__structure-items">
+														<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
+													</div>
+													<div class="choice-files__actions-block">
+														<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
+														<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="correct-data">
+									<div class="correct-data__caption">Вопрос от автора</div>
+									<div class="correct-data__envelope">
+										<div class="correct-data__menu-panel menu-panel">
+											<div class="menu-panel__levels-string">
+												<div class="menu-panel__string-box">
+													<a href="#" class="menu-panel__edit-tool">Источник</a>
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<img src="img/icons/cut.svg" alt="Tool Cut" class="menu-panel__tool-edit" width="13" height="13">
+													<img src="img/icons/pack.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<img src="img/icons/item_back.svg" alt="Tool Back" class="menu-panel__tool-edit" width="13" height="13">
+													<img src="img/icons/item_next.svg" alt="Tool Next" class="menu-panel__tool-edit" width="13" height="13">
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<img src="img/icons/abc.svg" alt="Tool Edit Letter" class="menu-panel__tool-edit" width="13" height="13">
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												</div>
+												<div class="menu-panel__string-box">
+													<img src="img/icons/letter_b.svg" alt="Tool Letter B" class="menu-panel__tool-edit" width="13" height="13">
+													<img src="img/icons/letter_i.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+													<img src="img/icons/letter_s.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												</div>
+												<div class="menu-panel__string-box">
+													<a href="#" class="menu-panel__tool-style">Стили</a>
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<a href="#" class="menu-panel__tool-style">Форматирование</a>
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+													<img src="img/icons/arrows.svg" alt="Tool Pack" class="menu-panel__tool-edit" width="13" height="13">
+													<span><img src="img/icons/verticale-line.svg" alt="Line" class="menu-panel__separator" width="2" height="13"></span>
+												</div>
+											</div>
+										</div>
+										<textarea class="correct-data__area-text" name="preface-area" autocomplete="off" placeholder="Поделитесь своими идеями в комментариях."></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-article__individual-block reg-user">
+							<div class="reg-user__btns-body">
+								<div class="form-article__option-btn">
+									<button type="button" class="form-article__button-action">Сохранить</button>
+								</div>
+								<div class="form-article__option-btn">
+									<button type="button" class="form-article__button-action">Отправить на модерацию</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="form-article__btn-choice-act">
-					<div class="form-article__option-btn">
-						<button type="button" class="form-article__button-action">Сохранить</button>
-					</div>
-					<div class="form-article__option-btn">
-						<button type="button" class="form-article__button-action">Отправить на модерацию</button>
-					</div>
-				</div>
-
 			</form>
 
 			<!-- Todo Set Albums -->
-			<section class="albums-block">
-				<h2 class="albums-block__title-section">Альбомы</h2>
+			<section class="albums-block albums-block--setup">
+				<div class="albums-block__border">
+					<h2 class="albums-block__title-section">Альбомы</h2>
 
-				<ul class="albums-block__list-links">
-					<li><a href="#" class="albums-block__item-link">Корпоратив на природе</a></li>
-					<li><a href="#" class="albums-block__item-link">Описание альбома</a></li>
-					<li><a href="#" class="albums-block__item-link">Порядковый номер отображение</a></li>
-					<li><a href="#" class="albums-block__item-link">Добавить альбом</a></li>
-				</ul>
-
-				<div class="albums-block__cell-album cell-album">
-
-					<!-- * album #1 -->
-					<article class="cell-album__setup-card">
-						<div class="cell-album__body-col">
-
-							<button type="button" class="cell-album__btn-close-album">
-								<img src="img/icons/close.svg" alt="Close" class="" width="24" height="24" loading="lazy">
-							</button>
-
-							<div class="cell-album__desk-cell">
-								<h2 class="cell-album__album-name">Альбом 1</h2>
-								<div class="cell-album__num-album">№1</div>
-							</div>
-
-							<button id="media-btn-one" class="cell-album__media">Медиа</button>
+					<div class="albums-block__content">
+						<ul class="albums-block__list-links">
+							<li><a href="#" class="albums-block__item-link">Корпоратив на природе</a></li>
+							<li><a href="#" class="albums-block__item-link">Описание альбома</a></li>
+							<li><a href="#" class="albums-block__item-link">Порядковый номер отображение</a></li>
+							<li><a href="build_album.html" class="albums-block__item-link">Добавить альбом</a></li>
+						</ul>
+						<div class="albums-block__cell-album cell-album">
+							<!-- * album #1 -->
+							<article class="cell-album__setup-card">
+								<div class="cell-album__body-col">
+									<button type="button" class="cell-album__btn-close-album">
+										<img src="img/icons/close.svg" alt="Close" class="" width="16" height="16">
+									</button>
+									<div class="cell-album__desk-cell">
+										<h2 class="cell-album__album-name">Альбом 1</h2>
+										<div class="cell-album__num-album">№1</div>
+									</div>
+									<button id="media-btn-one" class="cell-album__media">Медиа</button>
+								</div>
+							</article>
+							<!-- * album #2 -->
+							<article class="cell-album__setup-card">
+								<div class="cell-album__body-col">
+									<button type="button" class="cell-album__btn-close-album">
+										<img src="img/icons/close.svg" alt="Close" class="" width="16" height="16">
+									</button>
+									<div class="cell-album__desk-cell">
+										<h2 class="cell-album__album-name">Альбом 2</h2>
+										<div class="cell-album__num-album">№2</div>
+									</div>
+									<button id="media-btn-two" class="cell-album__media">Медиа</button>
+								</div>
+							</article>
+							<!-- * album #3 -->
+							<article class="cell-album__setup-card">
+								<div class="cell-album__body-col">
+									<button type="button" class="cell-album__btn-close-album">
+										<img src="img/icons/close.svg" alt="Close" class="" width="16" height="16">
+									</button>
+									<div class="cell-album__desk-cell">
+										<h2 class="cell-album__album-name">Альбом 3</h2>
+										<div class="cell-album__num-album">№3</div>
+									</div>
+									<button id="media-btn-three" class="cell-album__media">Медиа</button>
+								</div>
+							</article>
+							<!-- * album #4 -->
+							<article class="cell-album__setup-card">
+								<div class="cell-album__body-col">
+									<button type="button" class="cell-album__btn-close-album">
+										<img src="img/icons/close.svg" alt="Close" class="" width="16" height="16">
+									</button>
+									<div class="cell-album__desk-cell">
+										<h2 class="cell-album__album-name">Альбом 4</h2>
+										<div class="cell-album__num-album">№4</div>
+									</div>
+									<button id="media-btn-four" class="cell-album__media">Медиа</button>
+								</div>
+							</article>
+							<!-- * album #5 -->
+							<article class="cell-album__setup-card">
+								<div class="cell-album__body-col">
+									<button type="button" class="cell-album__btn-close-album">
+										<img src="img/icons/close.svg" alt="Close" class="" width="16" height="16">
+									</button>
+									<div class="cell-album__desk-cell">
+										<h2 class="cell-album__album-name">Альбом 5</h2>
+										<div class="cell-album__num-album">№5</div>
+									</div>
+									<button id="media-btn-five" class="cell-album__media">Медиа</button>
+								</div>
+							</article>
 						</div>
-					</article>
-
-					<!-- * album #2 -->
-					<article class="cell-album__setup-card">
-						<div class="cell-album__body-col">
-
-							<button type="button" class="cell-album__btn-close-album">
-								<img src="img/icons/close.svg" alt="Close" class="" width="24" height="24" loading="lazy">
-							</button>
-
-							<div class="cell-album__desk-cell">
-								<h2 class="cell-album__album-name">Альбом 2</h2>
-								<div class="cell-album__num-album">№2</div>
-							</div>
-
-							<button id="media-btn-two" class="cell-album__media">Медиа</button>
-						</div>
-					</article>
-
-					<!-- * album #3 -->
-					<article class="cell-album__setup-card">
-						<div class="cell-album__body-col">
-
-							<button type="button" class="cell-album__btn-close-album">
-								<img src="img/icons/close.svg" alt="Close" class="" width="24" height="24" loading="lazy">
-							</button>
-
-							<div class="cell-album__desk-cell">
-								<h2 class="cell-album__album-name">Альбом 3</h2>
-								<div class="cell-album__num-album">№3</div>
-							</div>
-
-							<button id="media-btn-three" class="cell-album__media">Медиа</button>
-						</div>
-					</article>
-
-					<!-- * album #4 -->
-					<article class="cell-album__setup-card">
-						<div class="cell-album__body-col">
-
-							<button type="button" class="cell-album__btn-close-album">
-								<img src="img/icons/close.svg" alt="Close" class="" width="24" height="24" loading="lazy">
-							</button>
-
-							<div class="cell-album__desk-cell">
-								<h2 class="cell-album__album-name">Альбом 4</h2>
-								<div class="cell-album__num-album">№4</div>
-							</div>
-
-							<button id="media-btn-four" class="cell-album__media">Медиа</button>
-						</div>
-					</article>
-
-					<!-- * album #5 -->
-					<article class="cell-album__setup-card">
-						<div class="cell-album__body-col">
-
-							<button type="button" class="cell-album__btn-close-album">
-								<img src="img/icons/close.svg" alt="Close" class="" width="24" height="24" loading="lazy">
-							</button>
-
-							<div class="cell-album__desk-cell">
-								<h2 class="cell-album__album-name">Альбом 5</h2>
-								<div class="cell-album__num-album">№5</div>
-							</div>
-
-							<button id="media-btn-five" class="cell-album__media">Медиа</button>
-						</div>
-					</article>
+					</div>
 				</div>
 
 			</section>
@@ -610,7 +606,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241208162812"></script>
+	<script src="js/app.min.js?_v=20241210024312"></script>
 </body>
 
 </html>

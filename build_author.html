@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Eventbooking">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241208162812">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241210024312">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,9 +82,9 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="popup__close">
-						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
-							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						<svg width="14" height="14" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#000000" stroke-linecap="square" />
+							<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#000000" stroke-linecap="square" />
 						</svg>
 					</button>
 
@@ -93,7 +93,7 @@
 						<div class="links-popup">
 							<div class="links-popup__link-wrap link">
 								<a href="#" class="link__page-action">Идентифкация</a>
-								<a href="#" class="link__page-action">Регистрация</a>
+								<a href="#" class="link__page-action link__page-action--default">Регистрация</a>
 							</div>
 
 						</div>
@@ -116,36 +116,32 @@
 								</div>
 							</div>
 
-							<div class="average-level">
-								<h1 class="average-level__title">Или войти с помощью</h1>
-
-								<div class="average-level__corpus-icons social">
-									<div class="social__crisper">
-										<a title="Yandex" href="https://ya.ru/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/icon_yandex.svg" alt="Yandex" class="social__pic-icon" width="38" height="38">
-										</a>
-										<a title="VK" href="https://vk.com/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/icon_vk.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
-										</a>
-										<a title="Mail.ru" href="https://mail.ru/" class="social__icon-link-inner" target="_blank">
-											<img src="img/items_svg/mail.ru.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
-										</a>
-									</div>
-
-									<div class="social__checkbox-unit checkbox-unit">
-										<input id="remember-check" type="checkbox" class="checkbox-unit__elem" name="checkbox-remember" required>
-										<label for="remember-check" class="checkbox-unit__label-rem">Запомнить меня</label>
+							<div class="general-box">
+								<div class="average-level average-level--setup">
+									<h1 class="average-level__title">Или войти с помощью</h1>
+									<div class="average-level__corpus-icons social">
+										<div class="social__crisper">
+											<a title="Yandex" href="https://ya.ru/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/icon_yandex.svg" alt="Yandex" class="social__pic-icon" width="38" height="38">
+											</a>
+											<a title="VK" href="https://vk.com/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/icon_vk.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
+											</a>
+											<a title="Mail.ru" href="https://mail.ru/" class="social__icon-link-inner" target="_blank">
+												<img src="img/items_svg/mail.ru.svg" alt="Yandex" class="social__pic-icon" width="43" height="38">
+											</a>
+										</div>
+										<div class="social__checkbox-unit checkbox-unit">
+											<input id="remember-check" type="checkbox" class="checkbox-unit__elem" name="checkbox-remember" required>
+											<label for="remember-check" class="checkbox-unit__label-rem">Запомнить меня</label>
+										</div>
 									</div>
 								</div>
-							</div>
-
-							<div class="level-access">
 
 								<div class="level-access">
 									<div class="level-access__btn-inner">
 										<button type="submit" class="level-submit__enter">Войти</button>
 									</div>
-
 									<div class="level-access__entrance entrance">
 										<a href="#" class="entrance__link-restore">Забыли пароль?</a>
 									</div>
@@ -163,22 +159,20 @@
 		<main class="page page--setup">
 
 			<!-- Todo Sub Menu -->
-			<div class="sub-link">
+			<div class="sub-link sub-link--setup">
 				<div class="sub-link__content">
-					<img src="img/icons/arrow_big.svg" alt="Arrow" class="sub-link__marker-arrow" width="18" height="18">
-					<a href="index.html" class="sub-link__main-page">Вернуться назад</a>
+					<img src="img/icons/arrow_big.svg" alt="Arrow" class="sub-link__marker-arrow" width="8" height="13">
+					<a href="index.html" id="author-main-page" class="sub-link__main-page">Вернуться назад</a>
 				</div>
 			</div>
 
 			<!-- Todo identification -->
-			<div class="identification">
+			<div class="identification identification--setup">
 
 				<div class="identification__sub-content">
-					<div class="identification__link-action">
-						<a data-popup="#popup" class="identification__windows-user">
-							<h1 class="identification__title-page">Пройти идентификацию</h1>
-						</a>
-					</div>
+					<a href="#" data-popup="#popup" class="identification__windows-user">
+						<h1 class="identification__title-page">Пройти идентификацию</h1>
+					</a>
 					<div class="identification__sms">Обязательная процедура!</div>
 				</div>
 
@@ -189,69 +183,79 @@
 
 				<div class="form-user-reg__content reg-user">
 					<div class="reg-user__body-user-data">
-						<label for="full-name" class="reg-user__label-userreg">ФИО автора
-							<input id="full-name" type="text" class="reg-user__input-userreg" name="full-name-userreg" placeholder="Eventus" required>
-						</label>
 
-						<label for="num-tel" class="reg-user__label-userreg">Номер телефона
-							<input id="num-tel" type="tel" class="reg-user__input-userreg" name="num-tel-name-userreg" pattern="\+?[0-9\s\-\(\)]+" required>
-						</label>
+						<div class="reg-user__mainform-data">
+							<div class="reg-user__row-items">
+								<label for="full-name" class="reg-user__label-userreg">ФИО автора</label>
+								<input id="full-name" type="text" class="reg-user__input-userreg" name="full-name-userreg" placeholder="Eventus" required>
+							</div>
+							<div class="reg-user__row-items">
+								<label for="num-tel" class="reg-user__label-userreg">Номер телефона</label>
+								<input id="num-tel" type="tel" class="reg-user__input-userreg" name="num-tel-name-userreg" placeholder="|" pattern="\+?[0-9\s\-\(\)]+" required>
+							</div>
+							<div class="reg-user__row-items">
+								<label for="short-info" class="reg-user__label-userreg">Коротко об авторе</label>
+								<input id="short-info" type="text" class="reg-user__input-userreg" name="info-author-userreg" placeholder="Автор имеет глубокую связь с городом и хорошо понимает..." required>
+							</div>
+						</div>
 
-						<label for="short-info" class="reg-user__label-userreg">Коротко об авторе
-							<input id="short-info" type="text" class="reg-user__input-userreg" name="info-author-userreg" placeholder="Автор имеет глубокую связь с городом и хорошо понимает..." required>
-						</label>
+						<div class="reg-user__big-file-processing">
 
-						<div class="img-selection">
-							<div class="img-selection__sub-title">Изображение</div>
-							<div class="img-selection__border">
-								<div class="img-selection__body-imgs body-img">
-									<!-- * cover #1 -->
-									<div class="body-img__item-cover item-cover">
-										<div class="item-cover__structure">
-											<div class="item-cover__pic-side">
-												<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
-											</div>
-											<div class="item-cover__control">
-												<div class="item-cover__box-download">
-													<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
-												</div>
-												<div id="size-cover" class="item-cover__size-item">(114.49 KB)</div>
-											</div>
-											<div class="item-cover__panel-iteml tool">
-												<div class="tool__holder">
-													<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-												</div>
-												<div class="tool__holder">
-													<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
-												</div>
-												<div class="tool__holder">
-													<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+							<div class="img-selection">
+								<div class="img-selection__sub-title">Изображение</div>
+
+								<div class="img-selection__border">
+									<div class="img-selection__body-imgs body-img">
+										<!-- * cover #1 -->
+										<div class="body-img__item-cover item-cover">
+											<div class="item-cover__structure">
+												<div class="item-cover__body-pic-elem">
+													<div class="item-cover__level-one">
+														<div class="item-cover__pic-side">
+															<img src="img/photo.webp" alt="Sover" class="item-cover__thumb" width="194" height="127">
+														</div>
+														<div class="item-cover__control">
+															<div class="item-cover__box-download">
+																<button type="button" class="item-cover__loading-btn">Загрузить обложку</button>
+															</div>
+															<div id="size-cover" class="item-cover__size-item">(114.49 KB)</div>
+														</div>
+													</div>
+													<div class="item-cover__panel-iteml tool">
+														<div class="tool__holder">
+															<img src="img/icons/basket.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+														</div>
+														<div class="tool__holder">
+															<img src="img/icons/zoom.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+														</div>
+														<div class="tool__holder">
+															<img src="img/icons/update.svg" alt="Zoom" class="tool__edit-cover-box" width="20" height="20">
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="choice-files">
-							<div class="choice-files__setup">
-								<div class="choice-files__structure-items">
-									<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album">
-									<label for="file-choice-album" class="choice-files__inner-label">Выбрано файлов: <span class="choice-files__span-value" id="numbers-files">1</span></label>
-								</div>
-							</div>
-							<div class="choice-files__actions-block">
-								<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
-								<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
-							</div>
-						</div>
+									<div class="reg-user__dop-block">
+										<div class="choice-files">
+											<div class="choice-files__structure-items">
+												<input id="file-choice-album" type="text" class="choice-files__file-choice" name="file-choice-album" placeholder="Выбрано файлов: 1" autocomplete="off">
+											</div>
 
-						<div class="rules">
-							<label for="checkbox-rules" class="rules__label">
-								<input id="checkbox-rules" type="checkbox" class="rules__checkbox-item" name="checkbox-userreg" required>
-								С правилами размещения статей ознакомлен и согласен
-							</label>
+											<div class="choice-files__actions-block">
+												<button id="btn-cancel-album" type="button" class="choice-files__button-setup">Отмена</button>
+												<button id="btn-choise-album" type="button" class="choice-files__button-setup">Выбрать</button>
+											</div>
+										</div>
+										<div class="rules">
+											<input id="checkbox-rules" type="checkbox" class="rules__checkbox-item" name="checkbox-userreg" required>
+											<label for="checkbox-rules" class="rules__label">С правилами размещения статей ознакомлен и согласен</label>
+										</div>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 
@@ -269,7 +273,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241208162812"></script>
+	<script src="js/app.min.js?_v=20241210024312"></script>
 </body>
 
 </html>
